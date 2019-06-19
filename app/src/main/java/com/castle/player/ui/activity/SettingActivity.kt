@@ -1,5 +1,6 @@
 package com.castle.player.ui.activity
 
+import android.preference.PreferenceManager
 import android.support.v7.widget.Toolbar
 import com.castle.player.R
 import com.castle.player.base.BaseActivity
@@ -18,5 +19,8 @@ class SettingActivity : BaseActivity(),ToolBarManager {
 
     override fun initData() {
         initSettingToolBar()
+
+
     }
+
 }

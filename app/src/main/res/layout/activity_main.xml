@@ -17,6 +17,9 @@
     <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            app:menu="@menu/home"
+            android:layout_gravity="center"
+
     ></android.support.design.widget.BottomNavigationView>
 
 </LinearLayout>
