@@ -6,20 +6,17 @@ import com.castle.player.base.BaseActivity
 import com.castle.player.util.ToolBarManager
 import org.jetbrains.anko.find
 
-class MainActivity : BaseActivity(),ToolBarManager {
-    //惰性加载
-    override val toolbar: Toolbar by lazy {
+class SettingActivity : BaseActivity(),ToolBarManager {
+    override val toolbar: Toolbar by lazy{
         find<Toolbar>(R.id.toolbar)
     }
 
-
     override fun getLayoutId(): Int {
-        return R.layout.activity_main
+        return R.layout.activity_setting
+
     }
 
     override fun initData() {
-        initMainToolBar()
+        initSettingToolBar()
     }
-
-
 }
