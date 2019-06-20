@@ -16,7 +16,7 @@ class MainActivity : BaseActivity(),ToolBarManager {
         find<Toolbar>(R.id.toolbar)
     }
 
-    val bottomNav by lazy {
+    val bottomNav :BottomNavigationView by lazy {
         find<BottomNavigationView>(R.id.bottom_nav)
     }
 

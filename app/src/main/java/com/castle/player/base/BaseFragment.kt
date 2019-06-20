@@ -33,7 +33,7 @@ abstract class BaseFragment : Fragment() ,AnkoLogger{
         initData()
     }
 
-    protected fun initData() {
+    open protected fun initData() {
 
     }
 

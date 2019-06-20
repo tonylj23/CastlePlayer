@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="300dp">
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="300dp">
+
+        <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_launcher_foreground"/>
+
+        <ImageView
+                android:id="@+id/icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"/>
+        <TextView
+                android:id="@+id/musics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/icon"
+                android:textColor="#00ff00"
+                android:maxLines="1"
+                android:layout_marginBottom="3dp"
+                android:text="歌单"/>
+        <TextView
+                android:id="@+id/redommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textSize="23sp"
+                android:layout_toRightOf="@id/icon"
+                android:layout_above="@id/musics"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:text="简介"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
 
 
-</RelativeLayout>
