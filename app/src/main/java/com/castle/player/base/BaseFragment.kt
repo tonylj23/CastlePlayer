@@ -20,6 +20,7 @@ abstract class BaseFragment : Fragment() ,AnkoLogger{
 
     }
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return interView()
     }
@@ -36,7 +37,7 @@ abstract class BaseFragment : Fragment() ,AnkoLogger{
 
     }
 
-    protected fun initListener() {
+    open fun initListener() {
 
     }
 
